@@ -111,12 +111,13 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 72px;
+    letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #fff;
 }
 .header__content p {
     margin-top: 40px;
-    max-width: 465px;
+    max-width: 460px;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 24px;
@@ -185,5 +186,93 @@ h1, h2, h3, h4, h5, h6, p {
 
     .header__content h1 {
         font-size: 30px;
+    }
+}
+
+.video {
+    margin-top: 95px;
+    padding-bottom: 95px;
+}
+.video__items-flex {
+    display: flex;
+    justify-content: flex-start;
+    gap: 125px;
+}
+.video__text {
+    margin-top: 32px;
+    max-width: 445px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video__text h3 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    color: #000;
+}
+.video__text p {
+    margin-top: 43px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #000;
+}
+
+.video__button {
+    margin-top: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: justify;
+    color: #ed4c5c;
+    text-decoration: none;
+}
+.video__image {
+    width: 445px;
+    height: 311px;
+}
+
+@media screen and (max-width: 1200px){
+    .video__items-flex {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .video > .container {
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .video__items-flex {
+        gap: 20px;
+    }
+    .video__image {
+        width: 300px;
+        height: auto
+    }
+
+    .video__text h3 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .video{
+        margin-top: 70px;
+        padding-bottom: 70px
+    }
+    .video__image {
+        max-width: 100%;
+    }
+
+        .video__text h3 {
+        font-size: 25px;
     }
 }
