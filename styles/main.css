@@ -677,3 +677,40 @@ h1, h2, h3, h4, h5, h6, p {
         width: 250px;
     }
 }
+
+.footer {
+    background: #fafafa;
+    padding-top: 46px;
+}
+
+.footer__flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer__flex h4 {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    color: #101010;
+}
+
+.footer__flex p:nth-of-type(1) {
+    margin-top: 25px;
+}
+
+.footer__flex p {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #101010;
+}
+
+@media screen and (max-width:680px) {
+    .footer > .container {
+        padding: 0 25px;
+    }
+    
+}
