@@ -37,6 +37,7 @@ h1, h2, h3, h4, h5, h6, p {
         url("../image/background.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 782px;
     width: 100%;
 }
@@ -189,6 +190,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+/* video */
 .video {
     margin-top: 95px;
     padding-bottom: 95px;
@@ -274,5 +276,126 @@ h1, h2, h3, h4, h5, h6, p {
 
         .video__text h3 {
         font-size: 25px;
+    }
+}
+
+/* possibilities */
+.possibilities {
+    background: #fafafa;
+    padding-top: 62px;
+    padding-bottom: 225px;
+}
+.possibilities h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+}
+.possibilities__items-flex {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.possibilities__card {
+    position: relative;
+}
+
+.possibilities__image {
+    width: 350px;
+    height: 250px;
+}
+.possibilities__card-text {
+    position: absolute;
+    top: 158px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    width: 293px;
+    height: 198px;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+.possibilities__card-text h5 {
+    margin-top: 26px;
+    max-width: 229px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #101010;
+}
+.possibilities__card-text p {
+    margin-top: 18px;
+    max-width: 229px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #101010;
+}
+.possibilities__button {
+    margin-top: 15px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #ed4c5c;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1390px){
+    .possibilities__items-flex {
+        justify-content: center;
+        gap: 150px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .possibilities > .container {
+        padding: 0 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .possibilities h2 {
+        font-size: 30px;
+    }
+    .possibilities__image {
+        width: 250px;
+        height: auto;
+    }
+
+    .possibilities__card-text {
+        width: 230px;
+        height: 145px;
+        top: 115px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .possibilities__card-text h5 {
+        margin-top: 5px;
+    }
+
+    .possibilities__card-text p {
+        margin-top: 5px;
+    }
+
+    .possibilities__button {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .possibilities > .container {
+        padding: 0 5px;
     }
 }
