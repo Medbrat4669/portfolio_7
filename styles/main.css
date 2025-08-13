@@ -564,3 +564,116 @@ h1, h2, h3, h4, h5, h6, p {
         font-size: 25px;
     }
 }
+
+/* write */
+.write {
+    padding-top: 158px;
+    padding-bottom: 132px;
+}
+.write__flex {
+    display: flex;
+    gap: 135px;
+}
+.write__left {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.write__left h2 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 36px;
+    color: #000;
+}
+
+.write__left p {
+    margin-top: 54px;
+    max-width: 434px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #000;
+}
+.write__right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 24px;
+}
+
+.write__right input {
+    border: 1px solid #333;
+    border-radius: 6px;
+    max-width: 540px;
+    height: 60px;
+}
+
+.write__right input::placeholder{
+    padding-left: 31px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(19, 39, 67, 0.5);
+}
+
+.write__right button {
+    border: none;
+    border-radius: 6px;
+    width: 160px;
+    height: 50px;
+    background: #ed4c5c;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media screen and (max-width: 1100px){
+    .write__flex {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+
+    }
+
+    .write__right input {
+        width: 400px;
+        height: 60px;
+    }
+    
+    .write__left h2 {
+        text-align: center;
+    }
+
+    .write__left p {
+        text-align: center;
+    }
+
+    .write__right button {
+        align-self: center;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .write > .container {
+        padding: 0 25px;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    .write__right input {
+        align-self: center;
+        width: 250px;
+        height: 60px;
+    }
+
+    .write__right button {
+        width: 250px;
+    }
+}
